@@ -28,28 +28,25 @@ class StartScreen extends StatelessWidget {
             right: MediaQuery.of(context).size.width * 0.1,
             child: Container(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Row(
-                    children: [
-                      Text(
-                        'Welcome to',
-                        style: TextStyle(
-                          fontSize: 30,
-                          fontFamily: GoogleFonts.montserrat().fontFamily,
-                          fontWeight: FontWeight.w300,
-                          color: Colors.white,
-                        ),
-                      ),
-                      Text(
-                        ' Calori Food',
-                        style: TextStyle(
-                          fontSize: 34,
-                          fontFamily: GoogleFonts.lato().fontFamily,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ],
+                  Text(
+                    'Welcome to',
+                    style: TextStyle(
+                      fontSize: 30,
+                      fontFamily: GoogleFonts.montserrat().fontFamily,
+                      fontWeight: FontWeight.w300,
+                      color: Colors.white,
+                    ),
+                  ),
+                  Text(
+                    'Calori Food',
+                    style: TextStyle(
+                      fontSize: 34,
+                      fontFamily: GoogleFonts.archivoBlack().fontFamily,
+                      fontWeight: FontWeight.w400,
+                      color: Color.fromARGB(255, 250, 91, 17),
+                    ),
                   ),
                   SizedBox(height: 16,),
                   Text(
@@ -65,19 +62,27 @@ class StartScreen extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: MediaQuery.of(context).size.height - 100,
+            top: MediaQuery.of(context).size.height - 110,
             left: MediaQuery.of(context).size.width * 0.1,
             right: MediaQuery.of(context).size.width * 0.1,
             child: Container(
-              width: MediaQuery.of(context).size.width * 0.8,
+              width: MediaQuery.of(context).size.width * 0.7,
               height: MediaQuery.of(context).size.height * 0.1,
               decoration: BoxDecoration(
-                color: Colors.white12,
-                borderRadius: BorderRadius.circular(20),
+                gradient: LinearGradient(
+                  colors: [
+                    Color.fromARGB(255, 253, 93, 1),
+                    Color.fromARGB(255, 236, 146, 42),
+                  ],
+                  begin: Alignment.centerLeft,
+                  end: Alignment.centerRight,
+                ),
+                // color: Colors.white12,
+                borderRadius: BorderRadius.circular(30),
               ),
               child: TextButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const MainScreen()),
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => MainScreen()),
                   );
                 },
                 child: Text(
