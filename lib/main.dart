@@ -1,6 +1,5 @@
-import 'package:calori_food/Screen/detail_Screen.dart';
-import 'package:calori_food/Screen/main_Screen.dart';
-import 'package:calori_food/Screen/start_Screen.dart';
+import 'package:calori_food/pages/main_Screen.dart';
+import 'package:calori_food/pages/start_Screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Calori Food',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
-      home: DetailsPage(),
+      home: MainScreen(),
     );
   }
 }
