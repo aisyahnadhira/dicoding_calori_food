@@ -14,7 +14,7 @@ class MainScreen extends StatelessWidget {
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.all(24.0),
+            padding: const EdgeInsets.only(left: 24.0, right: 24.0, top: 50.0, bottom: 10.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -50,6 +50,7 @@ class MainScreen extends StatelessWidget {
                   prefixIcon: Icon(Icons.search, color: Colors.black,),
                   fillColor: Color.fromARGB(255, 238, 237, 240),
                   filled: true,
+                  hintText: "Search Food",
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(24.0),
                     borderSide: BorderSide(
@@ -143,7 +144,7 @@ class MainScreen extends StatelessWidget {
                       children: <Widget>[
                         Positioned(
                           child: Padding(
-                            padding: const EdgeInsets.only(left: 20.0, right: 20),
+                            padding: const EdgeInsets.only(left: 8.0, right: 8),
                             child: Card(
                               elevation: 5,
                               shape: RoundedRectangleBorder(
@@ -167,7 +168,7 @@ class MainScreen extends StatelessWidget {
                                   padding: const EdgeInsets.only(top: 80.0),
                                   child: Center(
                                     child: Container(
-                                        width: MediaQuery.of(context).size.width *0.866,
+                                        width: MediaQuery.of(context).size.width *0.833,
                                         height: MediaQuery.of(context).size.height * 0.1,
                                         decoration: BoxDecoration(
                                           color: Colors.black38,
