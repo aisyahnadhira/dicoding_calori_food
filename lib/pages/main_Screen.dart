@@ -173,11 +173,7 @@ class MainScreen extends StatelessWidget {
                                         decoration: BoxDecoration(
                                           color: Colors.black38,
                                         ),
-                                        child: TextButton(
-                                          onPressed: () {
-                                            Navigator.push(context, MaterialPageRoute(builder: (context) => MainScreen()),
-                                            );
-                                          },
+                                        child: Center(
                                           child: Text(
                                             food.title,
                                             style: TextStyle(

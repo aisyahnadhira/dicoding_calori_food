@@ -58,16 +58,16 @@ class DetailScreen extends StatelessWidget {
                         child: Container(
                           height: MediaQuery.of(context).size.height * 0.3,
                           width: MediaQuery.of(context).size.height * 0.3,
-                          child: Image.asset(title.image1)),
+                          child: Image.asset(title.imageList[0])),
                       ),
-                      Text(title.food1, 
+                      Text(title.foodNameList[0], 
                       style: TextStyle(
                         fontSize: 20, 
                         fontWeight: FontWeight.bold, 
                         fontFamily: GoogleFonts.openSans().fontFamily, 
                         color: Colors.white),),
                        SizedBox(width: 30),
-                      Text(title.kal1, style: TextStyle(
+                      Text(title.kaloriList[0], style: TextStyle(
                         fontSize: 20, 
                         fontWeight: FontWeight.bold, 
                         fontFamily: GoogleFonts.openSans().fontFamily, 
@@ -90,16 +90,16 @@ class DetailScreen extends StatelessWidget {
                         child: Container(
                           height: MediaQuery.of(context).size.height * 0.3,
                           width: MediaQuery.of(context).size.height *0.3,
-                          child: Image.asset(title.image2)),
+                          child: Image.asset(title.imageList[1])),
                       ),
-                      Text(title.food2,
+                      Text(title.foodNameList[1],
                       style: TextStyle(
                         fontSize: 20, 
                         fontWeight: FontWeight.bold, 
                         fontFamily: GoogleFonts.openSans().fontFamily, 
                         color: Colors.white),),
                       SizedBox(width: 30),
-                      Text(title.kal2, style: TextStyle(
+                      Text(title.kaloriList[1], style: TextStyle(
                         fontSize: 20, 
                         fontWeight: FontWeight.bold, 
                         fontFamily: GoogleFonts.openSans().fontFamily, 
@@ -121,15 +121,15 @@ class DetailScreen extends StatelessWidget {
                         child: Container(
                           height: MediaQuery.of(context).size.height * 0.3,
                           width: MediaQuery.of(context).size.height * 0.3,
-                          child: Image.asset(title.image3)),
+                          child: Image.asset(title.imageList[2])),
                       ),
-                      Text(title.food3, style: TextStyle(
+                      Text(title.foodNameList[2], style: TextStyle(
                         fontSize: 20, 
                         fontWeight: FontWeight.bold, 
                         fontFamily: GoogleFonts.openSans().fontFamily, 
                         color: Colors.white),),
                        SizedBox(width: 30),
-                      Text(title.kal3, style: TextStyle(
+                      Text(title.kaloriList[2], style: TextStyle(
                         fontSize: 20, 
                         fontWeight: FontWeight.bold, 
                         fontFamily: GoogleFonts.openSans().fontFamily, 
@@ -138,6 +138,37 @@ class DetailScreen extends StatelessWidget {
                   ),
                 ),
               ),
+              SizedBox(height: 20),
+              Container(
+                height: MediaQuery.of(context).size.height * 0.47,
+                width: MediaQuery.of(context).size.width,
+                child: Card(
+                  color: Colors.black38,
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: Container(
+                          height: MediaQuery.of(context).size.height * 0.3,
+                          width: MediaQuery.of(context).size.height * 0.3,
+                          child: Image.asset(title.imageList[3])),
+                      ),
+                      Text(title.foodNameList[3], style: TextStyle(
+                        fontSize: 20, 
+                        fontWeight: FontWeight.bold, 
+                        fontFamily: GoogleFonts.openSans().fontFamily, 
+                        color: Colors.white),),
+                       SizedBox(width: 30),
+                      Text(title.kaloriList[3], style: TextStyle(
+                        fontSize: 20, 
+                        fontWeight: FontWeight.bold, 
+                        fontFamily: GoogleFonts.openSans().fontFamily, 
+                        color: Colors.white),),
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(height: 20),
             ],
           ),
         )
