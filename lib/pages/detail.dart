@@ -2,12 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:calori_food/models/CaloriData.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class DetailScreen extends StatelessWidget {
-  // const DetailScreen({ Key? key }) : super(key: key);
+class DetailScreen extends StatefulWidget {
   final CaloriData title;
  
   DetailScreen({required this.title});
 
+  @override
+  State<DetailScreen> createState() => _DetailScreenState();
+}
+
+class _DetailScreenState extends State<DetailScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +33,7 @@ class DetailScreen extends StatelessWidget {
                     },
                     color: Colors.white,
                 ),
-                Text(title.title, 
+                Text(widget.title.title, 
                   style: TextStyle(
                     fontSize: 24, 
                     fontWeight: FontWeight.bold, 
@@ -58,16 +62,16 @@ class DetailScreen extends StatelessWidget {
                         child: Container(
                           height: MediaQuery.of(context).size.height * 0.3,
                           width: MediaQuery.of(context).size.height * 0.3,
-                          child: Image.asset(title.imageList[0])),
+                          child: Image.asset(widget.title.imageList[0])),
                       ),
-                      Text(title.foodNameList[0], 
+                      Text(widget.title.foodNameList[0], 
                       style: TextStyle(
                         fontSize: 20, 
                         fontWeight: FontWeight.bold, 
                         fontFamily: GoogleFonts.openSans().fontFamily, 
                         color: Colors.white),),
                        SizedBox(width: 30),
-                      Text(title.kaloriList[0], style: TextStyle(
+                      Text(widget.title.kaloriList[0], style: TextStyle(
                         fontSize: 20, 
                         fontWeight: FontWeight.bold, 
                         fontFamily: GoogleFonts.openSans().fontFamily, 
@@ -90,16 +94,16 @@ class DetailScreen extends StatelessWidget {
                         child: Container(
                           height: MediaQuery.of(context).size.height * 0.3,
                           width: MediaQuery.of(context).size.height *0.3,
-                          child: Image.asset(title.imageList[1])),
+                          child: Image.asset(widget.title.imageList[1])),
                       ),
-                      Text(title.foodNameList[1],
+                      Text(widget.title.foodNameList[1],
                       style: TextStyle(
                         fontSize: 20, 
                         fontWeight: FontWeight.bold, 
                         fontFamily: GoogleFonts.openSans().fontFamily, 
                         color: Colors.white),),
                       SizedBox(width: 30),
-                      Text(title.kaloriList[1], style: TextStyle(
+                      Text(widget.title.kaloriList[1], style: TextStyle(
                         fontSize: 20, 
                         fontWeight: FontWeight.bold, 
                         fontFamily: GoogleFonts.openSans().fontFamily, 
@@ -121,15 +125,15 @@ class DetailScreen extends StatelessWidget {
                         child: Container(
                           height: MediaQuery.of(context).size.height * 0.3,
                           width: MediaQuery.of(context).size.height * 0.3,
-                          child: Image.asset(title.imageList[2])),
+                          child: Image.asset(widget.title.imageList[2])),
                       ),
-                      Text(title.foodNameList[2], style: TextStyle(
+                      Text(widget.title.foodNameList[2], style: TextStyle(
                         fontSize: 20, 
                         fontWeight: FontWeight.bold, 
                         fontFamily: GoogleFonts.openSans().fontFamily, 
                         color: Colors.white),),
                        SizedBox(width: 30),
-                      Text(title.kaloriList[2], style: TextStyle(
+                      Text(widget.title.kaloriList[2], style: TextStyle(
                         fontSize: 20, 
                         fontWeight: FontWeight.bold, 
                         fontFamily: GoogleFonts.openSans().fontFamily, 
@@ -151,15 +155,15 @@ class DetailScreen extends StatelessWidget {
                         child: Container(
                           height: MediaQuery.of(context).size.height * 0.3,
                           width: MediaQuery.of(context).size.height * 0.3,
-                          child: Image.asset(title.imageList[3])),
+                          child: Image.asset(widget.title.imageList[3])),
                       ),
-                      Text(title.foodNameList[3], style: TextStyle(
+                      Text(widget.title.foodNameList[3], style: TextStyle(
                         fontSize: 20, 
                         fontWeight: FontWeight.bold, 
                         fontFamily: GoogleFonts.openSans().fontFamily, 
                         color: Colors.white),),
                        SizedBox(width: 30),
-                      Text(title.kaloriList[3], style: TextStyle(
+                      Text(widget.title.kaloriList[3], style: TextStyle(
                         fontSize: 20, 
                         fontWeight: FontWeight.bold, 
                         fontFamily: GoogleFonts.openSans().fontFamily, 

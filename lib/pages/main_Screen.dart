@@ -3,10 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:calori_food/models/CaloriData.dart';
 
-class MainScreen extends StatelessWidget {
+class MainScreen extends StatefulWidget {
   MainScreen({ Key? key }) : super(key: key);
 
+  @override
+  State<MainScreen> createState() => _MainScreenState();
+}
 
+class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
