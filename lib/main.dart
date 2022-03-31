@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Calori Food',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
-      home: MainScreen(),
+      home: StartScreen(),
     );
   }
 }
