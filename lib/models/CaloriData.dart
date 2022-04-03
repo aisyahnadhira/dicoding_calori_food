@@ -116,7 +116,7 @@ var caloriDataList = [
     title: 'Vegetable',
     image: 'assets/images/vegetable.png',
     foodNameList: [
-      'Letuce',
+      'Lettuce',
       'Tomato',
       'Broccoli',
       'Cucumber',

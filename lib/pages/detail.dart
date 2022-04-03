@@ -2,16 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:calori_food/models/CaloriData.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class DetailScreen extends StatefulWidget {
+class DetailScreen extends StatelessWidget {
   final CaloriData title;
  
   DetailScreen({required this.title});
 
-  @override
-  State<DetailScreen> createState() => _DetailScreenState();
-}
-
-class _DetailScreenState extends State<DetailScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +28,7 @@ class _DetailScreenState extends State<DetailScreen> {
                     },
                     color: Colors.white,
                 ),
-                Text(widget.title.title, 
+                Text(title.title, 
                   style: TextStyle(
                     fontSize: 24, 
                     fontWeight: FontWeight.bold, 
@@ -50,124 +45,132 @@ class _DetailScreenState extends State<DetailScreen> {
             ),
             SizedBox(height: 20,),
               Container(
-                height: MediaQuery.of(context).size.height * 0.47,
+                height: MediaQuery.of(context).size.height * 0.6,
                 width: MediaQuery.of(context).size.width,
                 child: Card(
                   color: Colors.black38,
                   elevation: 5,
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: Container(
                           height: MediaQuery.of(context).size.height * 0.3,
-                          width: MediaQuery.of(context).size.height * 0.3,
-                          child: Image.asset(widget.title.imageList[0])),
+                          width: MediaQuery.of(context).size.height * 0.4,
+                          child: Image.asset(title.imageList[0])),
                       ),
-                      Text(widget.title.foodNameList[0], 
+                      Text(title.foodNameList[0], 
                       style: TextStyle(
-                        fontSize: 20, 
+                        fontSize: 24, 
                         fontWeight: FontWeight.bold, 
                         fontFamily: GoogleFonts.openSans().fontFamily, 
                         color: Colors.white),),
                        SizedBox(width: 30),
-                      Text(widget.title.kaloriList[0], style: TextStyle(
-                        fontSize: 20, 
+                      Text(title.kaloriList[0], style: TextStyle(
+                        fontSize: 24, 
                         fontWeight: FontWeight.bold, 
                         fontFamily: GoogleFonts.openSans().fontFamily, 
                         color: Colors.white),),
+                        Favorite(),
                     ],
                   ),
                 ),
               ),
               SizedBox(height: 20),
               Container(
-                height: MediaQuery.of(context).size.height *0.47,
+                height: MediaQuery.of(context).size.height *0.6,
                 width: MediaQuery.of(context).size.width,
                 child: Card(
                   color: Colors.black38,
                   elevation: 5,
-                  child: Column(
+                  child: Column(          
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: Container(
                           height: MediaQuery.of(context).size.height * 0.3,
-                          width: MediaQuery.of(context).size.height *0.3,
-                          child: Image.asset(widget.title.imageList[1])),
+                          width: MediaQuery.of(context).size.height *0.4,
+                          child: Image.asset(title.imageList[1])),
                       ),
-                      Text(widget.title.foodNameList[1],
+                      Text(title.foodNameList[1],
                       style: TextStyle(
-                        fontSize: 20, 
+                        fontSize: 24, 
                         fontWeight: FontWeight.bold, 
                         fontFamily: GoogleFonts.openSans().fontFamily, 
                         color: Colors.white),),
                       SizedBox(width: 30),
-                      Text(widget.title.kaloriList[1], style: TextStyle(
-                        fontSize: 20, 
+                      Text(title.kaloriList[1], style: TextStyle(
+                        fontSize: 24, 
                         fontWeight: FontWeight.bold, 
                         fontFamily: GoogleFonts.openSans().fontFamily, 
                         color: Colors.white),),
+                        Favorite(),
                     ],
                   ),
                 ),
               ),
               SizedBox(height: 20),
               Container(
-                height: MediaQuery.of(context).size.height * 0.47,
+                height: MediaQuery.of(context).size.height * 0.6,
                 width: MediaQuery.of(context).size.width,
                 child: Card(
                   color: Colors.black38,
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: Container(
                           height: MediaQuery.of(context).size.height * 0.3,
-                          width: MediaQuery.of(context).size.height * 0.3,
-                          child: Image.asset(widget.title.imageList[2])),
+                          width: MediaQuery.of(context).size.height * 0.4,
+                          child: Image.asset(title.imageList[2])),
                       ),
-                      Text(widget.title.foodNameList[2], style: TextStyle(
-                        fontSize: 20, 
+                      Text(title.foodNameList[2], style: TextStyle(
+                        fontSize: 24, 
                         fontWeight: FontWeight.bold, 
                         fontFamily: GoogleFonts.openSans().fontFamily, 
                         color: Colors.white),),
                        SizedBox(width: 30),
-                      Text(widget.title.kaloriList[2], style: TextStyle(
-                        fontSize: 20, 
+                      Text(title.kaloriList[2], style: TextStyle(
+                        fontSize: 24, 
                         fontWeight: FontWeight.bold, 
                         fontFamily: GoogleFonts.openSans().fontFamily, 
                         color: Colors.white),),
+                        Favorite(),
                     ],
                   ),
                 ),
               ),
               SizedBox(height: 20),
               Container(
-                height: MediaQuery.of(context).size.height * 0.47,
+                height: MediaQuery.of(context).size.height * 0.6,
                 width: MediaQuery.of(context).size.width,
                 child: Card(
                   color: Colors.black38,
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: Container(
                           height: MediaQuery.of(context).size.height * 0.3,
-                          width: MediaQuery.of(context).size.height * 0.3,
-                          child: Image.asset(widget.title.imageList[3])),
+                          width: MediaQuery.of(context).size.height * 0.4,
+                          child: Image.asset(title.imageList[3])),
                       ),
-                      Text(widget.title.foodNameList[3], style: TextStyle(
-                        fontSize: 20, 
+                      Text(title.foodNameList[3], style: TextStyle(
+                        fontSize: 24, 
                         fontWeight: FontWeight.bold, 
                         fontFamily: GoogleFonts.openSans().fontFamily, 
                         color: Colors.white),),
                        SizedBox(width: 30),
-                      Text(widget.title.kaloriList[3], style: TextStyle(
-                        fontSize: 20, 
+                      Text(title.kaloriList[3], style: TextStyle(
+                        fontSize: 24, 
                         fontWeight: FontWeight.bold, 
                         fontFamily: GoogleFonts.openSans().fontFamily, 
                         color: Colors.white),),
+                        Favorite(),
                     ],
                   ),
                 ),
@@ -177,6 +180,34 @@ class _DetailScreenState extends State<DetailScreen> {
           ),
         )
       )
+    );
+  }
+}
+
+class Favorite extends StatefulWidget {
+  Favorite({ Key? key }) : super(key: key);
+
+  // final data = caloriDataList;
+
+  @override
+  State<Favorite> createState() => _FavoriteState();
+}
+
+class _FavoriteState extends State<Favorite> {
+  bool isFavorite = false;
+  @override
+  Widget build(BuildContext context) {
+    return IconButton(
+      icon: Icon(
+        isFavorite ? Icons.favorite : Icons.favorite_border,
+        color: Colors.red,
+        size: 30,
+      ),
+      onPressed: () {
+        setState(() {
+          isFavorite = !isFavorite;
+        });
+      },
     );
   }
 }

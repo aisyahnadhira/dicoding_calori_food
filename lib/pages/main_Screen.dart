@@ -3,14 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:calori_food/models/CaloriData.dart';
 
-class MainScreen extends StatefulWidget {
+class MainScreen extends StatelessWidget {
   MainScreen({ Key? key }) : super(key: key);
 
-  @override
-  State<MainScreen> createState() => _MainScreenState();
-}
-
-class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,7 +33,7 @@ class _MainScreenState extends State<MainScreen> {
                     ),
                   ),
               IconButton(
-                icon: Icon(Icons.menu),
+                icon: Icon(Icons.list),
                 onPressed: () {},
                 color: Colors.white,
               ),
@@ -195,14 +190,12 @@ class _MainScreenState extends State<MainScreen> {
                               ]
                             ),
                     ),
-                );
-                 },
-                  ),
+                  );
+                },
+              ),
             ),
           ),
         ],
-        
-        
       )
     );
   }
