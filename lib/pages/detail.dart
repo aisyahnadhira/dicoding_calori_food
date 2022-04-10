@@ -12,7 +12,7 @@ class DetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      drawer: Drawer(
+      endDrawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
@@ -65,7 +65,7 @@ class DetailScreen extends StatelessWidget {
                 IconButton(
                   icon: Icon(Icons.menu, color: Colors.white),
                   onPressed: () {
-                    scaffoldKey.currentState?.openDrawer();
+                    scaffoldKey.currentState?.openEndDrawer();
                   },
                   ),
               ]),
