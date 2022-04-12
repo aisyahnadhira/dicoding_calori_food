@@ -4,7 +4,7 @@ class CaloriData {
   List<String> foodNameList;
   List<String> imageList;
   List<String> kaloriList;
- 
+
   CaloriData({
     required this.title,
     required this.image,
@@ -139,12 +139,7 @@ var caloriDataList = [
   CaloriData(
     title: 'Bread',
     image: 'assets/images/bread.png',
-    foodNameList: [
-    'Croissant',
-    'White Bread',
-    'Baguette',
-    'wafel'
-    ],
+    foodNameList: ['Croissant', 'White Bread', 'Baguette', 'wafel'],
     imageList: [
       'assets/images/croissant.png',
       'assets/images/whitebread.png',
