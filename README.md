@@ -1,16 +1,16 @@
-# calori_food
+# Calori Food
 
-A new Flutter project.
+Calori food app is an application that is used to see the number of calories of food and drinks
 
-## Getting Started
+# Finish Design
+### Start Screen ###
+![Start Screen](https://github.com/aisyahnadhira/dicoding_calori_food/blob/master/assets/images/finish/finish1.jpg?raw=true)
 
-This project is a starting point for a Flutter application.
+### Main Screen ###
+![Main Screen](https://github.com/aisyahnadhira/dicoding_calori_food/blob/master/assets/images/finish/finish2.jpg?raw=true)
 
-A few resources to get you started if this is your first Flutter project:
+### Detail Screen ###
+![Detail Screen](https://github.com/aisyahnadhira/dicoding_calori_food/blob/master/assets/images/finish/finish3.jpg?raw=true)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Sidebar Screen ###
+![Sidebar Screen](https://github.com/aisyahnadhira/dicoding_calori_food/blob/master/assets/images/finish/finish4.jpg?raw=true)
